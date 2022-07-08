@@ -3,7 +3,7 @@ const path = require('path')
 
 const app = express();
 
-const PUBLIC_PATH = path.join(__dirname, '..', 'build');
+const PUBLIC_PATH = path.join(__dirname, '..', 'dist');
 const PORT = process.env.PORT || 3000;
 
 app.use(express.static(PUBLIC_PATH));
